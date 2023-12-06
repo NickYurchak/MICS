@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clothing Items</title>
+  <style>
+      /* Стилі для відображення товарів */
+.item-container {
+  display: inline-block;
+  width: calc(25% - 20px); /* Ширина для 4 товарів в ряду з відступами між ними */
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.clothing-item {
+  border: 1px solid #ccc;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.clothing-item img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+  </style>
+</head>
+<body>
+  <div id="clothing-items"></div>
+  <div>
+    <h2>Товари такого ж типу:</h2>
+    <ul id="similar-type"></ul>
+    <h2>Товари за тією ж колекцією:</h2>
+    <ul id="similar-collection"></ul>
+  </div>
+
+  <script src="dist/main.js"></script>
+</body>
+</html>
