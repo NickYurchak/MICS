@@ -3,6 +3,7 @@ from rectangle import Rectangle
 from circle import Circle
 from parameters import*
 
+
 class ShapeFactory:
     @staticmethod
     def create_random_shape():
